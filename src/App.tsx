@@ -1,19 +1,13 @@
+import Circle from './Circle';
 import React from 'react';
-import { GlobalStyles } from './styles/GlobalStyles';
 
-const App = () => {
+function App() {
   return (
-    <React.Fragment>
-      <GlobalStyles />
-      <div style={{ textAlign: 'center' }}>
-        <h1>Hello world!</h1>
-        <a className='link' href=''>
-          VRST Boilerplate
-        </a>
-        <p>(Vite.js, React.js, Styled-Components, and Typescript)</p>
-      </div>
-    </React.Fragment>
+    <div>
+      <Circle bgColor='teal' />
+      <Circle bgColor='tomato' />
+    </div>
   );
-};
+}
 
 export default App;
